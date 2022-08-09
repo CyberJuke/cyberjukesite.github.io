@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('Demon\ Slayer\ Wpp.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Menu*/
+
+.containerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #222;
+}
+
+.menuItem {
+    font-size: 2rem;
+    padding:40px;
+    color: #FFFFFF;
+    font-family:'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Imagens*/
+@media (max-width:1920px) {
+
+    div#all_imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .divs {
+        display: grid;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        justify-items: center;
+    }
+
+    .titles {
+        display: grid;
+        align-items: center;
+        font-family:arial;
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 20vw;
+        min-width: 20vw;
+        max-height: 5vh;
+        min-height: 5vh;
+        border: 2px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        opacity: 80%;
+    }
+
+
+    .imgs {
+        width: 30vw;
+        border: 10px solid black;
+        margin-bottom: 50px;
+        transition: width 1s;
+        transition-timing-function: ease;
+    }
+
+    .imgs:hover {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+
+    body {
+        background-image: url('Demon Slayer Wpp 768.png');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div#all_imgs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .divs {
+        margin-top: 50px;
+    }
+
+    .titles {
+        display: grid;
+        align-items: center;
+        font-size: 4vw;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+
+    .imgs {
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+}
